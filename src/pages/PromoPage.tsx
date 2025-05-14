@@ -59,11 +59,13 @@ const PromoPage = () => {
             Try Edicy instead
             <span className="arrow-icon">→</span>
           </a>
+          
+          <div className="bottom-spacing"></div>
         </div>
       </div>
       
       <div className="promo-image">
-        <img src="/lovable-uploads/735cf2f1-0fc1-41e8-ad6d-5ea71c6c6b03.png" alt="Person with plants" />
+        <img src="/lovable-uploads/d5a0068e-d84e-4b52-92ef-7cc2f6143774.png" alt="Woman with plants" />
       </div>
     </div>
   );

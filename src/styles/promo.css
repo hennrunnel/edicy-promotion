@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+.bottom-spacing {
+  height: 64px;
+  width: 100%;
+}
+
 .promo-image {
   width: 50%;
   background: #FBFBFB;
