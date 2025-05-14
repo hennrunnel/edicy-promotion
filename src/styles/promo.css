@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@400;500;600;700&display=swap');
 
 .promo-container {
@@ -186,13 +185,10 @@
     height: auto;
   }
   
-  .promo-content, .promo-image {
+  .promo-content {
     width: 100%;
     overflow-y: visible;
     height: auto;
-  }
-  
-  .promo-content {
     padding: 40px 20px;
   }
   
@@ -201,8 +197,7 @@
   }
   
   .promo-image {
-    height: 400px;
-    position: relative;
+    display: none; /* Hide the image on smaller screens */
   }
 }
 

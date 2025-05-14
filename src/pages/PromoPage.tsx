@@ -23,7 +23,7 @@ const PromoPage = () => {
           
           <p className="pricing">Starting from 11€/month.</p>
           
-          <a href="#" className="primary-button">
+          <a href="https://www.voog.com/signup" target="_blank" rel="noopener noreferrer" className="primary-button">
             Proceed to Voog sign-up
             <span className="arrow-icon">→</span>
           </a>
@@ -73,7 +73,7 @@ const PromoPage = () => {
           
           <p className="pricing">Starting from 9€/month.</p>
           
-          <a href="#" className="secondary-button">
+          <a href="https://www.edicy.com" target="_blank" rel="noopener noreferrer" className="secondary-button">
             Try Edicy instead
             <span className="arrow-icon">→</span>
           </a>
