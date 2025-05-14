@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voog Promo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@400;500;600;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    .promo-container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      position: relative;
+      background: white;
+    }
+    
+    .promo-content {
+      width: 50%;
+      padding: 58px 0 0 142px;
+    }
+    
+    .promo-image {
+      width: 50%;
+      background: #FBFBFB;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    .promo-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .back-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 60px;
+      text-decoration: none;
+      color: black;
+    }
+    
+    .content-wrapper {
+      max-width: 488px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    
+    .heading {
+      color: black;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 39px;
+    }
+    
+    .description {
+      color: #1B2124;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+    
+    .pricing {
+      color: #1B2124;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+    
+    .primary-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 254px;
+      height: 56px;
+      padding: 0 16px;
+      background: #443DF6;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 32px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .primary-button:hover {
+      background: #3731c9;
+    }
+    
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: #EFEFEF;
+    }
+    
+    .sub-heading {
+      color: black;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    
+    .sub-description {
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+    
+    .features-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .features-list li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .checkmark {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1B2124;
+      font-weight: 600;
+    }
+    
+    .secondary-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: fit-content;
+      padding: 16px 18px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: border-color 0.3s ease;
+    }
+    
+    .secondary-button:hover {
+      border-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .arrow-icon {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 1200px) {
+      .promo-content {
+        padding: 58px 0 0 80px;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .promo-container {
+        flex-direction: column;
+      }
+      
+      .promo-content, .promo-image {
+        width: 100%;
+      }
+      
+      .promo-content {
+        padding: 40px 20px;
+      }
+      
+      .content-wrapper {
+        max-width: 100%;
+      }
+      
+      .promo-image {
+        height: 400px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .primary-button, .secondary-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="promo-container">
+    <div class="promo-content">
+      <a href="#" class="back-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5"></path>
+          <path d="M12 19l-7-7 7-7"></path>
+        </svg>
+      </a>
+      
+      <div class="content-wrapper">
+        <h1 class="heading">Sign up for Voog</h1>
+        
+        <p class="description">
+          Create your multilingual website or online store with powerful tools and easy setup.
+        </p>
+        
+        <p class="pricing">Starting from 11€/month.</p>
+        
+        <a href="#" class="primary-button">
+          Proceed to Voog sign-up
+          <span class="arrow-icon">→</span>
+        </a>
+        
+        <div class="divider"></div>
+        
+        <h2 class="sub-heading">... or try Edicy instead</h2>
+        
+        <p class="sub-description">
+          Perfect for one-page websites and landing pages.
+        </p>
+        
+        <ul class="features-list">
+          <li>
+            <div class="checkmark">✓</div>
+            <span>No-code dynamic page builder</span>
+          </li>
+          <li>
+            <div class="checkmark">✓</div>
+            <span>Ideal for quick page and campaign launches</span>
+          </li>
+          <li>
+            <div class="checkmark">✓</div>
+            <span>Easy forms &amp; lead capture</span>
+          </li>
+          <li>
+            <div class="checkmark">✓</div>
+            <span>Integrates with Zapier, Hubspot, Mailchimp, and more</span>
+          </li>
+        </ul>
+        
+        <p class="pricing">Starting from 9€/month.</p>
+        
+        <a href="#" class="secondary-button">
+          Try Edicy instead
+          <span class="arrow-icon">→</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="promo-image">
+      <img src="/lovable-uploads/735cf2f1-0fc1-41e8-ad6d-5ea71c6c6b03.png" alt="Person with plants">
+    </div>
+  </div>
+</body>
+</html>
