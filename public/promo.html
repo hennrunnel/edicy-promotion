@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +20,19 @@
     
     .promo-container {
       width: 100%;
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       position: relative;
       background: white;
+      overflow: hidden; /* Prevent container scrolling */
     }
     
     .promo-content {
       width: 50%;
       padding: 58px 0 0 142px;
+      box-sizing: border-box;
+      overflow-y: auto; /* Make left pane scrollable */
+      height: 100vh; /* Full height */
     }
     
     .bottom-spacing {
@@ -39,6 +44,9 @@
       width: 50%;
       background: #FBFBFB;
       height: 100vh;
+      position: sticky;
+      top: 0;
+      right: 0;
       overflow: hidden;
     }
     
@@ -71,6 +79,7 @@
       font-size: 40px;
       font-weight: 700;
       line-height: 39px;
+      margin: 0;
     }
     
     .description {
@@ -78,6 +87,7 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 32px;
+      margin: 0;
     }
     
     .pricing {
@@ -85,6 +95,7 @@
       font-size: 16px;
       font-weight: 600;
       line-height: 24px;
+      margin: 0;
     }
     
     .primary-button {
@@ -119,6 +130,7 @@
       font-size: 32px;
       font-weight: 700;
       line-height: 40px;
+      margin: 0;
     }
     
     .sub-description {
@@ -126,11 +138,13 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 32px;
+      margin: 0;
     }
     
     .features-list {
       list-style: none;
       padding: 0;
+      margin: 0;
       display: flex;
       flex-direction: column;
       gap: 8px;
@@ -148,6 +162,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #1B2124;
     }
     
     .secondary-button {
@@ -184,13 +199,14 @@
     @media (max-width: 992px) {
       .promo-container {
         flex-direction: column;
-      }
-      
-      .promo-content, .promo-image {
-        width: 100%;
+        overflow-y: auto; /* Allow container scrolling on mobile */
+        height: auto;
       }
       
       .promo-content {
+        width: 100%;
+        overflow-y: visible;
+        height: auto;
         padding: 40px 20px;
       }
       
@@ -199,7 +215,7 @@
       }
       
       .promo-image {
-        height: 400px;
+        display: none; /* Hide the image on smaller screens */
       }
     }
     
@@ -214,9 +230,9 @@
   <div class="promo-container">
     <div class="promo-content">
       <a href="#" class="back-button">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M19 12H5"></path>
-          <path d="M12 19l-7-7 7-7"></path>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24.0007 14.6666C24.737 14.6666 25.334 15.2635 25.334 15.9999C25.334 16.7363 24.737 17.3333 24.0007 17.3333H8.00065C7.26427 17.3333 6.66732 16.7363 6.66732 15.9999C6.66732 15.2635 7.26427 14.6666 8.00065 14.6666H24.0007Z" fill="black"/>
+          <path d="M16.9422 23.0571C17.4629 23.5778 17.4629 24.422 16.9422 24.9427C16.4215 25.4634 15.5772 25.4634 15.0565 24.9427L7.05654 16.9427C6.55177 16.438 6.53411 15.6252 7.01648 15.099L14.3498 7.09895C14.8474 6.55613 15.6908 6.51946 16.2337 7.01705C16.7765 7.51464 16.8131 8.35806 16.3156 8.90088L9.84487 15.9598L16.9422 23.0571Z" fill="black"/>
         </svg>
       </a>
       
@@ -229,7 +245,7 @@
         
         <p class="pricing">Starting from 11€/month.</p>
         
-        <a href="#" class="primary-button">
+        <a href="https://www.voog.com/signup" target="_blank" rel="noopener noreferrer" class="primary-button">
           Proceed to Voog sign-up
           <span class="arrow-icon">→</span>
         </a>
@@ -279,7 +295,7 @@
         
         <p class="pricing">Starting from 9€/month.</p>
         
-        <a href="#" class="secondary-button">
+        <a href="https://www.edicy.com" target="_blank" rel="noopener noreferrer" class="secondary-button">
           Try Edicy instead
           <span class="arrow-icon">→</span>
         </a>
@@ -289,7 +305,7 @@
     </div>
     
     <div class="promo-image">
-      <img src="/lovable-uploads/d5a0068e-d84e-4b52-92ef-7cc2f6143774.png" alt="Person with plants">
+      <img src="lovable-uploads/d5a0068e-d84e-4b52-92ef-7cc2f6143774.png" alt="Woman with plants">
     </div>
   </div>
 </body>
