@@ -1,0 +1,22 @@
+
+.promo-image {
+  width: 50%;
+  background: #FBFBFB;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.promo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .promo-image {
+    display: none;
+  }
+}

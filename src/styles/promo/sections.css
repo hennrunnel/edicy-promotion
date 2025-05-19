@@ -1,0 +1,40 @@
+
+.heading {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 39px;
+  margin: 0;
+}
+
+.description {
+  color: #1B2124;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
+}
+
+.pricing {
+  color: #1B2124;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+
+.sub-heading {
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+
+.sub-description {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
+}

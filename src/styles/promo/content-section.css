@@ -1,0 +1,45 @@
+
+.promo-content {
+  width: 50%;
+  padding: 58px 0 0 142px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.bottom-spacing {
+  height: 64px;
+  width: 100%;
+}
+
+.content-wrapper {
+  max-width: 488px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #EFEFEF;
+}
+
+@media (max-width: 1200px) {
+  .promo-content {
+    padding: 58px 0 0 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .promo-content {
+    width: 100%;
+    overflow-y: visible;
+    height: auto;
+    padding: 40px 20px;
+  }
+  
+  .content-wrapper {
+    max-width: 100%;
+  }
+}
