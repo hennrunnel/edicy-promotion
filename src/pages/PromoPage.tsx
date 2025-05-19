@@ -25,11 +25,10 @@ const PromoPage = () => {
           
           <div className="divider"></div>
           
-          <h2 className="sub-heading">... or try Edicy instead</h2>
+          <h2 className="sub-heading">Need a simple one-pager?
+Try Edicy</h2>
           
-          <p className="sub-description">
-            Perfect for one-page websites and landing pages.
-          </p>
+          <p className="sub-description">Perfect for one-page websites and landing pages alike.</p>
           
           <ul className="features-list">
             <li>
@@ -38,7 +37,7 @@ const PromoPage = () => {
                   <path d="M4 12.5L9 17.5L19.5 7" stroke="#1B2124" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <span>No-code dynamic page builder</span>
+              <span>Publish in under 5 minutes</span>
             </li>
             <li>
               <div className="checkmark">
@@ -46,7 +45,7 @@ const PromoPage = () => {
                   <path d="M4 12.5L9 17.5L19.5 7" stroke="#1B2124" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <span>Ideal for quick page and campaign launches</span>
+              <span>Built-in A/B testing</span>
             </li>
             <li>
               <div className="checkmark">
@@ -62,11 +61,11 @@ const PromoPage = () => {
                   <path d="M4 12.5L9 17.5L19.5 7" stroke="#1B2124" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <span>Integrates with Zapier, Hubspot, Mailchimp, and more</span>
+              <span>Connect to your stack: Zapier, Hubspot, Mailchimp & more</span>
             </li>
           </ul>
           
-          <p className="pricing">Starting from 9€/month.</p>
+          
           
           <a href="https://www.edicy.com" target="_blank" rel="noopener noreferrer" className="secondary-button">
             Try Edicy instead
