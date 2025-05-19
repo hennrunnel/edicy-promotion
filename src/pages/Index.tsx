@@ -8,12 +8,20 @@ const Index = () => {
         <h1 className="text-4xl font-bold mb-4">Welcome to Your App</h1>
         <p className="text-xl text-gray-600">Check out our promotional page!</p>
       </div>
-      <Link 
-        to="/promo" 
-        className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-      >
-        View Promo Page
-      </Link>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <Link 
+          to="/promo" 
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          View Promo Page
+        </Link>
+        <Link 
+          to="/promo-et" 
+          className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+        >
+          View Estonian Promo Page
+        </Link>
+      </div>
     </div>
   );
 };
