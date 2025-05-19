@@ -1,7 +1,7 @@
 
 .promo-content {
   width: 50%;
-  padding: 58px 0 0 142px;
+  padding: 58px 40px 0 142px; /* Added right padding of 40px */
   box-sizing: border-box;
   overflow-y: auto;
   height: 100vh;
@@ -27,7 +27,7 @@
 
 @media (max-width: 1200px) {
   .promo-content {
-    padding: 58px 0 0 80px;
+    padding: 58px 40px 0 80px; /* Maintained right padding while reducing left padding */
   }
 }
 
