@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/promo.css';
+
 const PromoPage = () => {
   return <div className="promo-container">
       <div className="promo-content">
@@ -77,8 +79,9 @@ Try Edicy</h2>
       </div>
       
       <div className="promo-image">
-        <img src="/lovable-uploads/d5a0068e-d84e-4b52-92ef-7cc2f6143774.png" alt="Woman with plants" />
+        <img src="/lovable-uploads/3524cdba-e454-43df-b4b1-2a14b3978f94.png" alt="Man working on computer" />
       </div>
     </div>;
 };
+
 export default PromoPage;
