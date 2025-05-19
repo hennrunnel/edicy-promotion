@@ -16,7 +16,7 @@ const PromoPage = () => {
           
           <p className="description">Design, localize, and sell, all in one intuitive builder.</p>
           
-          <p className="pricing">Starting from 11€/month.</p>
+          
           
           <a href="https://www.voog.com/signup" target="_blank" rel="noopener noreferrer" className="primary-button">
             Proceed to Voog sign-up
