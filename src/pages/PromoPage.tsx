@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import '../styles/promo.css';
 
 const PromoPage = () => {
-  return <div className="promo-container">
+  return (
+    <div className="promo-container">
       <div className="promo-content">
         <Link to="/" className="back-button">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,17 +19,16 @@ const PromoPage = () => {
           
           <p className="description">Design, localize, and sell, all in one intuitive builder.</p>
           
-          
+          <p className="pricing">Starting from 11€/month.</p>
           
           <a href="https://www.voog.com/signup" target="_blank" rel="noopener noreferrer" className="primary-button">
-            Proceed to Voog sign-up
+            Start free 30-day trial
             <span className="arrow-icon">→</span>
           </a>
           
           <div className="divider"></div>
           
-          <h2 className="sub-heading">Need a simple one-pager?
-Try Edicy</h2>
+          <h2 className="sub-heading">Need a simple one-pager?<br />Try Edicy</h2>
           
           <p className="sub-description">Perfect for one-page websites and landing pages alike.</p>
           
@@ -67,7 +67,7 @@ Try Edicy</h2>
             </li>
           </ul>
           
-          
+          <p className="pricing">Starting from 9€/month.</p>
           
           <a href="https://www.edicy.com" target="_blank" rel="noopener noreferrer" className="secondary-button">
             Try Edicy instead
@@ -81,7 +81,8 @@ Try Edicy</h2>
       <div className="promo-image">
         <img src="/lovable-uploads/3524cdba-e454-43df-b4b1-2a14b3978f94.png" alt="Man working on computer" />
       </div>
-    </div>;
+    </div>
+  );
 };
 
 export default PromoPage;
